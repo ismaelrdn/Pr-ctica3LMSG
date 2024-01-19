@@ -1,0 +1,186 @@
+/* Se empieza el CSS haciendo diseño por defecto desde formato dispopostivo móvil */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    overflow-x: hidden ;
+    font-size: small;
+}
+
+.header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}
+
+main {
+    display: flex;
+    justify-content: center; 
+    flex-wrap: wrap; 
+    width: 100%;
+    text-align: center;
+    padding-top: 30px;
+    background-color: rgba(255, 217, 0, 0.137);
+    padding-bottom: 30px;
+}
+
+.column-secondary {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.title-socialmedia {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.div-comments {
+    margin-top: 30px;
+}
+
+.p-author {
+    font-weight: bold;
+}
+
+.p-comment{
+    font-style: italic;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.column-main {
+    width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.film{
+    margin-top: 30px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.p-film {
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-bottom: 5px;
+    padding-top: 5px;
+    border-bottom: 1px solid black;
+    transition: background-color 0.5s
+}
+
+.p-film:hover {
+    background-color: #add8e6; 
+}
+
+.column-marketing {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.banner{
+    background-color: #dbc23498;
+    color: #fff;
+    font-weight: bold;
+    font-size: larger;
+    padding: 20px;
+    margin: 15px;
+    text-align: center;
+    border-radius: 10px;
+    height: auto;
+}
+
+.container-film-marketing{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.film-marketing {
+    width: 100%;
+    margin: 10px;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}
+
+/* Aquí le indicamos cómo debe comportarse cuando se vea en tablet, que es básicamente igual que en PC */
+@media screen and (min-width: 600px) {
+    .column-secondary {
+        width: 25%;
+    }
+
+    .div-comments{
+        margin-top: 60px;
+    }
+
+    .column-main {
+        width: 75%;
+        margin-top: 0;
+    }
+
+    .column-films {
+        width: 38%;
+        border-left: 1px solid black;
+        border-right: 1px solid black;
+        border-top: none;
+        border-bottom: none;
+    }
+
+    .p-film {
+        border-bottom: none;
+    }
+
+
+    .column-marketing {
+        width: 60%;
+    }
+
+    .film-marketing {
+        width: 45%;
+        margin: 10px;
+    }
+}
+
+/* Aquó le indicamos cómo debe comportarse en pantallas de tamaño PC */
+@media screen and (min-width: 1024px) {
+    
+    .column-secondary {
+        width: 25%;
+    }
+
+    .div-comments{
+        margin-top: 60px;
+    }
+
+    .column-main {
+        width: 75%;
+        margin-top: 0;
+    }
+
+    .column-films {
+        width: 38%;
+        border-left: 1px solid black;
+        border-right: 1px solid black;
+    }
+
+    .column-marketing {
+        width: 60%;
+    }
+
+    
+
+    .film-marketing {
+        width: 30%; 
+        margin: 10px; 
+    }
+}
+
